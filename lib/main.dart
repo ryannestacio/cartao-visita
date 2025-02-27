@@ -19,31 +19,65 @@ class DesefioRowColumn extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/eu.jpg'),
-                radius: 60,
+                radius: 80,
               ),
             ),
             Text(
               'Ryan Estácio',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.deepOrange,
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Pacifico',
+              ),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'DESENVOLVEDOR FLUTTER',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.deepOrange.shade100,
                 fontFamily: 'Source Pro',
+                letterSpacing: 2.5,
               ),
             ),
-            Text(
-              '_______________________________________________',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+            SizedBox(
+              width: 210,
+              height: 20,
+              child: Divider(color: Colors.deepOrange.shade100),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 120),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 25,
+                  color: Colors.deepOrange[900],
+                ),
+                title: Text(
+                  '+55 82 9 8219-9052',
+                  style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
-            Text(
-              '82 9 8219-9052',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                overflow: TextOverflow.clip,
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 2, horizontal: 120),
+              child: ListTile(
+                leading: Icon(
+                  Icons.apple,
+                  size: 25,
+                  color: Colors.deepOrange[900],
+                ),
+                title: Text(
+                  'ryannestacio@icloud.com',
+                  style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
           ],
