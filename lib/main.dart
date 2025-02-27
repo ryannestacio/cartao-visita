@@ -28,6 +28,7 @@ class DesefioRowColumn extends StatelessWidget {
                 color: Colors.white,
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Source Pro',
               ),
             ),
             Text(
